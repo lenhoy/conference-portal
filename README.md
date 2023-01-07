@@ -1,2 +1,2 @@
 # conference-portal
-Uni project developing an editable web portal using MEAN stack
+Uni project developing an editable web portal using Angular and Firebase

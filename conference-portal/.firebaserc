@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "conference-portal-3fef5": {
+      "hosting": {
+        "conference-portal": [
+          "conference-portal-3fef5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "conference-portal-3fef5"
+  }
+}

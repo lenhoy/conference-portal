@@ -8,6 +8,13 @@ import { SharedModule } from './shared/shared.module';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 
+import { environment } from 'environments/environment';
+
+// Firebase imports
+import { AngularFireModule } from '@angular/fire/compat';
+import { FirestoreModule } from '@angular/fire/firestore';
+import { AuthModule } from '@angular/fire/auth';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +25,10 @@ import { SpeakersComponent } from './speakers/speakers.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule  
+    SharedModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    FirestoreModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

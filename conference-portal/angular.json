@@ -108,6 +108,16 @@
               "src/**/*.html"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "conference-portal:build:production",
+            "firebaseProject": "conference-portal-3fef5",
+            "firebaseHostingSite": "conference-portal-3fef5"
+          }
         }
       }
     }

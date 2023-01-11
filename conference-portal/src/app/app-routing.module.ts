@@ -5,7 +5,8 @@ import { SpeakersComponent } from './speakers/speakers.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'speakers', component: SpeakersComponent},
+  { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+  { path: 'speakers', component: SpeakersComponent },
 ];
 
 @NgModule({

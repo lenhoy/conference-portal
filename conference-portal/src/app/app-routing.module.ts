@@ -14,7 +14,8 @@ import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'speakers', component: SpeakersComponent},
+  { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+  { path: 'speakers', component: SpeakersComponent },
   { path: 'papers', component: PapersComponent},
   { path: 'committees', component: CommitteesComponent},
   { path: 'dates', component: DatesComponent},

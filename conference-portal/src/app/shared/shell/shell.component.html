@@ -21,11 +21,16 @@
     <mat-nav-list>
 
       <a mat-list-item routerLink="/" (click)="drawer.close()">🏠 <b>Home</b></a>
+      <a mat-list-item routerLink="/committees" (click)="drawer.close()">🎫  Committees</a>
+      <a mat-list-item routerLink="/papers" (click)="drawer.close()">🎫  Papers</a>
+      <a mat-list-item routerLink="/dates" (click)="drawer.close()">🎫  Dates</a>
       <a mat-list-item routerLink="/speakers" (click)="drawer.close()">📣 Speakers</a>
       <a mat-list-item routerLink="/program" (click)="drawer.close()">📆  Program</a>
-      <a mat-list-item routerLink="/tickets" (click)="drawer.close()">🎫  Tickets</a>
-      <a mat-list-item routerLink="/submit" (click)="drawer.close()">📨 Submit</a>
-      <a mat-list-item routerLink="/login" (click)="drawer.close()">🔑  Login</a>
+      <a mat-list-item routerLink="/registration" (click)="drawer.close()">🎫  Registration</a>
+      <a mat-list-item routerLink="/photos" (click)="drawer.close()">📨 Photos</a>
+      <a mat-list-item routerLink="/previous" (click)="drawer.close()">🔑  Previous Editions</a>
+      <a mat-list-item routerLink="/contact" (click)="drawer.close()">🎫  Contact</a>
+      <a mat-list-item routerLink="/support" (click)="drawer.close()">🎫  Support</a>
     </mat-nav-list>
 
   </mat-sidenav>
@@ -43,17 +48,23 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
 
-      <span class="logo" routerLink="/">🔯 Oslo Convention Center</span>
-
+      <span routerLink="/">
+        <a class="navbar-logo" href="#">
+          <img src="/assets/icon.png" alt="logo" class="navbar-logo"  width="50" height="40">
+        </a> InteRact</span>
       <span class="fill-space"></span>
 
       <div *ngIf="!(isHandset$ | async)">
+        <a mat-button routerLink="/committees">🎫 Committees</a>
+        <a mat-button routerLink="/papers">🎫 Papers</a>
+        <a mat-button routerLink="/dates">🎫 Dates</a>
         <a mat-button routerLink="/speakers">📣 Speakers</a>
         <a mat-button routerLink="/program">📆 Program</a>
-        <a mat-button routerLink="/tickets">🎫 Tickets</a>
-        <a mat-button routerLink="/submit">📨 Submit</a>
-
-        <a mat-button routerLink="/login">🔑 Login</a>
+        <a mat-button routerLink="/registration">📨 Registration</a>
+        <a mat-button routerLink="/photos">📨 Photos</a>
+        <a mat-button routerLink="/previous">📨 Previous Editions</a>
+        <a mat-button routerLink="/contact">📨 Contact</a>
+        <a mat-button routerLink="/support">🔑 Support</a>
       </div>
 
       <button mat-icon-button [mat-menu-trigger-for]="menu">

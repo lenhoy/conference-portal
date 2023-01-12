@@ -50,6 +50,7 @@
 .genInfo{
     align-items: center;
     max-width: 75%;
+    word-break: break-all;
 }
 .genInfoFinal{
     justify-content: center;
@@ -97,4 +98,8 @@
     flex: auto;
     font-weight: bolder;
     margin-left: 50px;
+}
+.easychairbutton {
+    justify-content: center;
+    min-width: fit-content;
 }

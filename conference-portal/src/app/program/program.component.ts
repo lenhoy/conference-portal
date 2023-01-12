@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./program.component.scss']
 })
 export class ProgramComponent {
-
+  panelOpenState = false;
 }

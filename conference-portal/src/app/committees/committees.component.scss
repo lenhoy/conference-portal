@@ -1,0 +1,27 @@
+.comHead{
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+}
+.techCom{
+    padding: 50px;
+}
+.orgCom{
+    padding: 50px;
+}
+.orgComHead{
+    text-decoration: underline;
+}
+.techComHead{
+    text-decoration: underline;
+}
+ul{
+    list-style-type: circle;
+    margin: 1em 0; /* Add some space above and below the list */
+    font-size:larger;
+    font-weight: bold;
+}
+  
+li{
+    margin: 0.5em 0; /* Add some space between the items */
+}

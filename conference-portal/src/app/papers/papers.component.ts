@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./papers.component.scss']
 })
 export class PapersComponent {
+  panelOpenState = false;
 
 }

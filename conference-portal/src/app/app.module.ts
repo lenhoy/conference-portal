@@ -14,12 +14,32 @@ import { environment } from 'environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FirestoreModule } from '@angular/fire/firestore';
 import { AuthModule } from '@angular/fire/auth';
+import { CommitteesComponent } from './committees/committees.component';
+import { PapersComponent } from './papers/papers.component';
+import { DatesComponent } from './dates/dates.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { PhotosComponent } from './photos/photos.component';
+import { PreviousComponent } from './previous/previous.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProgramComponent } from './program/program.component';
+import { SupportComponent } from './support/support.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    CommitteesComponent,
+    PapersComponent,
+    DatesComponent,
+    RegistrationComponent,
+    PhotosComponent,
+    PreviousComponent,
+    ContactComponent,
+    ProgramComponent,
+    SupportComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

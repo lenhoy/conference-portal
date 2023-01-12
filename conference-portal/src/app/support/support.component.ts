@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./support.component.scss']
 })
 export class SupportComponent {
-
+  sponsors = [
+    {source: "/assets/iseplogo.png"},
+    {source: "/assets/pporto.png"},
+  ]
 }

@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'speakers',
     component: SpeakersComponent,
-    canActivate: [AuthGuard]
+    
   },
   { path: 'papers', component: PapersComponent},
   { path: 'committees', component: CommitteesComponent},

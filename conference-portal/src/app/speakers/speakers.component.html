@@ -1,3 +1,14 @@
 <div class="headSpeak">
     <h1>Speakers</h1>
 </div>
+
+<div class="speak">
+    <mat-list class="speakList" *ngFor ="let speaker of speakers">
+        <mat-list-item >
+            <span matListItemTitle matLine > {{  speaker.name  }} </span>
+            <span matListItemLine>Profession: {{  speaker.about  }}</span>
+            <span matListItemLine>Subject: {{  speaker.subject  }}</span>
+            <span matListItemLine>When: {{  speaker.when  }}</span>
+       </mat-list-item>
+    </mat-list>
+</div>

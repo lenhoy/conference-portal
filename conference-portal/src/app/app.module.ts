@@ -23,6 +23,7 @@ import { PreviousComponent } from './previous/previous.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProgramComponent } from './program/program.component';
 import { SupportComponent } from './support/support.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SupportComponent } from './support/support.component';
     PreviousComponent,
     ContactComponent,
     ProgramComponent,
-    SupportComponent
+    SupportComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

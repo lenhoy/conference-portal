@@ -11,11 +11,16 @@ import { PhotosComponent } from './photos/photos.component';
 import { PreviousComponent } from './previous/previous.component';
 import { ContactComponent } from './contact/contact.component';
 import { SupportComponent } from './support/support.component';
+import { AuthGuard } from './user/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
-  { path: 'speakers', component: SpeakersComponent },
+  {
+    path: 'speakers',
+    component: SpeakersComponent,
+    canActivate: [AuthGuard]
+  },
   { path: 'papers', component: PapersComponent},
   { path: 'committees', component: CommitteesComponent},
   { path: 'dates', component: DatesComponent},

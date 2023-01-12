@@ -1,12 +1,68 @@
 <div class="head-container">
-    <app-header></app-header>
+    <app-header [source]="headerSource"></app-header>
 </div>
-<div class="welcome d-flex justify-content-center">
-    <h1>Welcome to {{ eventEdition }}</h1>
-</div>
-<div class="about">
-    <h2>About the event:</h2>
-</div>
-<div class="aboutText">
-    <p>{{ about }}</p>
+
+<div class="container">
+
+    <div class="content">
+
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title>Welcome to {{form.value}}</mat-card-title>
+                <mat-card-subtitle>From {{ startDate | date }} to {{ endDate | date }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>About this conference:</p>
+            <p>{{about}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="content">
+
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                The Symposium's reference
+              </mat-panel-title>
+              <mat-panel-description>
+                themes are as follows
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            
+            <mat-list>
+                <mat-list-item *ngFor="let theme of themes">{{theme}}</mat-list-item>
+               </mat-list>
+
+          </mat-expansion-panel>
+
+    </div>
+    
+    <div class="content">
+        <img [src]="homeImageSource">
+    </div>
+        
+    <mat-form-field class="content" 
+            *ngIf="(afAuth.authState | async)" appearance="fill" (ngSubmit)="submitChanges()">
+
+        <mat-label>Input</mat-label>
+        <input matInput value="{{eventEdition}}">
+
+    </mat-form-field>
+
+    <mat-form-field *ngIf="(afAuth.authState | async)" 
+            class="content" appearance="fill">
+        <mat-label>Select start and end date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="(afAuth.authState | async)" 
+            class="content" appearance="fill">
+        <mat-label>About</mat-label>
+        <textarea matInput value="{{about}}"></textarea>
+    </mat-form-field>
+
 </div>

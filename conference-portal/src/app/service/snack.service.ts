@@ -11,9 +11,9 @@ export class SnackService {
   constructor(private snackBar: MatSnackBar, private router: Router) { }
 
   authError() {
-    this.snackBar.open("You idiot", "Agree", {
+    this.snackBar.open("Please login!", "OK", {
       duration: 5000,
-      politeness: 'assertive',
+      politeness: 'polite',
       horizontalPosition: 'center',
     });
 

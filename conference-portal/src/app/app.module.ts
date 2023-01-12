@@ -24,6 +24,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProgramComponent } from './program/program.component';
 import { SupportComponent } from './support/support.component';
 import { HeaderComponent } from './header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { HeaderComponent } from './header/header.component';
     AngularFireModule.initializeApp(environment.firebase),
     FirestoreModule,
     AuthModule,
+    ReactiveFormsModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

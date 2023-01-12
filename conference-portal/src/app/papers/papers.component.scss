@@ -1,7 +1,7 @@
 .headPap{
     justify-content: center;
     display: flex;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .calling{
     margin-top: 10px;
@@ -12,25 +12,58 @@
     justify-content: center;
     display: flex;
 }
-.submition{
-    justify-content: center;
+.spessInfo{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align:center;
+
+}
+.paperSpec{
+    max-width: 75%;
+    align-items: center;
+}
+.submition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align:center;
+}
+.subMatList{
+    align-items: center;
+    max-width: 75%;
 }
 .howTo{
     justify-content: center;
     display: flex;
 }
 .generalInfo{
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align:center;
+}
+.genInfo{
+    align-items: center;
+    max-width: 75%;
 }
 .genInfoFinal{
     justify-content: center;
     display: flex;
 }
 .recommended{
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align:center;
+}
+.recPost{
+    align-items: center;
+    max-width: 75%;
 }
 .spesifications{
     justify-content: center;
@@ -43,4 +76,24 @@
 }
 .mat-content > mat-panel-title{
     flex: auto;
+}
+.headSub{
+    text-align: center;
+}
+.outline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align:center;
+}
+.outlinePres{
+    align-items: center;
+    max-width: 75%;
+}
+.contact{
+    justify-content: center;
+    flex: auto;
+    font-weight: bolder;
+    margin-left: 50px;
 }

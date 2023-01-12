@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent {
-
+  source: string = "/assets/qrkode.png";
 }

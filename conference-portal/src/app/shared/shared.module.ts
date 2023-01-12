@@ -15,6 +15,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatSelectModule} from '@angular/material/select';
 
 
 //import { ShellComponent } from './shell/shell.component';
@@ -39,6 +40,7 @@ const modules = [
   MatSnackBarModule,
   MatGridListModule,
   MatExpansionModule,
+  MatSelectModule,
 ];
 
 
